@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 40px;
+  text-align: center;
+  background: coral;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 50px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+
+<body>
+    
+    <header class="header">
+        <h1>Portfolio</h1>
+        <p>Tijana Igrutinovic</p>
+    </header>
+    
+        <div class="navbar"> 
+            <a id="part1" href="#">Opste informacije</a>
+            <a id="part2" href="#">Obrazovanje</a>
+            <a id="part3" href="#">Projekti</a>
+            <a id="part4" href="#">Kontakt</a>
+        </div>
+
+        <div class="row">
+            <div class="side">
+                <h2> <a href="opste#part1"></a> Opste informacije </h2>
+                <img src="Profilna slika.jpg" style="height: 200px; width: 200px;" alt="slika">
+                        
+                    <ul>
+                        <li>Ime i prezime: Tijana Igrutinović</li>
+                        <li>Adresa: Bulevar Kralja Aleksandra 75 Beograd, Republika Srbija </li>
+                      <li>Mesto rođenja: Kraljevo, Republika Srbija</li>
+                    </ul>
+            </div>
+
+            <div class="main">
+                <h2> <a href="obrazovanje#part2"></a> Obrazovanje</h2>
+                    <ul>
+                        <li>2014 –Završila srednju Šumarsku školu –Smer „Geodetski tehničar-geometar “ u Kraljevu, Republika Srbija</li>
+                        <li>2018–Završilaosnovne akademske studije na Rudarsko-geoloskom fakultetu Univerziteta u Beogradu, studijski program Geologija, modul Petrologija i geohemija</li>
+                        <li>2018 –Upisala Master akademske studije na Rudarsko –geološkom fakultetu Univerziteta u Beogradu, studijski program Geologija, modul Geologija nafte i gasa</li>
+
+                    </ul>
+                
+                
+                <h2> <a href="projekti#part3"></a> Projekti</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Eius illum magnam velit aliquid, necessitatibus vel hic soluta ut commodi laboriosam quas ratione recusandae labore, ipsa dolore incidunt repellat! <br> Rerum, voluptatem.</p>
+                <p></p>
+                <h2> <a href="kontakt#part4"></a> Kontakt</h2>
+                <p>Telefon: +381645489658</p>
+                <p>Elektronska posta: <a href="tijana.igrutinovic@rgf.rs">tijana.igrutinovic@rgf.rs</a></p>
+            </div>
+        </div>
+    
+    <footer class="footer">
+        <p>Copyright © 2020. Tijana Igrutinovic</p></a>
+      
+
+    </footer>
+
+
+
+</body>
+</html>
