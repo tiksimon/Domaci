@@ -69,7 +69,7 @@ console.log(izdvajanjeSposobnosti(pokemoni))
 
 // Сортирати покемоне по брзини, растуће.
 
-pokemoni.sort((a,b) => a.karakteristike.brzina - b.karakteristike.brzina) 
-console.log(pokemoni)
+// pokemoni.sort((a,b) => a.karakteristike.brzina - b.karakteristike.brzina) 
+// console.log(pokemoni)
 
 
