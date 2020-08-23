@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Projekat</title>
+</head>
+
+<body>
+    <main class="app">
+        <article>
+            <section class="dostupan-budzet">
+                <p>Dostupan budzet u Novembru 2018:</p>
+                <div id="iznos">- 0.00</div>
+                
+                <div id="prihod">
+                    <p>PRIHOD</p>
+                    <p class="vrednost">+ 0.00</p>
+                </div>
+                <div>
+                    <div id="rashod">
+                        <p>RASHOD</p> 
+                        <p class="vrednost">- 0.00</p>
+                        <p id="procenti">--</p>
+                    </div>
+                </div>
+
+                
+            </section>
+            <section class="ulaz">
+                    <select name="dropdown" id="selektovanje" required>
+                        <option value="" disabled selected hidden>-</option>
+                        <option>Prihodi</option>
+                        <option>Rashodi</option>
+                    </select>
+                    <input type="text" id="unos-opis" placeholder="Opis" required>
+                    <input type="text" id="unos-iznosa" placeholder="Iznos" required>
+                    <input class="btn" type="submit" value="    "/><i class="far fa-check-circle fa-3x icon"></i>
+            </section>
+            <section class ="budget">
+                <div class="prihod2">
+                    <p>PRIHODI</p>
+                </div>
+                <div class="rashod2">
+                    <p>RASHODI</p>
+                </div>
+            </section>
+        </article>
+    </main>
+   
+</body> 
+
+</html> 

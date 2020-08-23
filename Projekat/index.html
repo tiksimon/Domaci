@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Izracunavanje prihoda i rashoda</title>
+</head>
+
+<body>
+    <div id="app"></div>
+</body>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Projekat</title>
+</head>
+
+<body>
+    <main class="app">
+        <article>
+            <section class="dostupan-budzet">
+                <p id="budzet">Dostupan budzet u Avgustu 2020.</p>
+                <div id="iznos">0.00</div>
+                
+                <div id="prihod">
+                    <p>PRIHOD</p>
+                    <p class="vrednost" id="iznos-prihod">0.00</p>
+                </div>
+                <div>
+                    <div id="rashod">
+                        <p>RASHOD</p>
+                        <p class="vrednost" id="iznos-rashod">0.0</p>
+                        <p id="procenti">0.0 %</p> 
+                    </div>
+                </div>
+            </section>
+
+            <section class="ulaz">
+                <select name="dropdown" id="selektovanje" required>
+                    <option value="">--</option>
+                    <option value="P">Prihodi</option>
+                    <option value="R">Rashodi</option>
+                </select>
+                <input type="text" id="unos-opis" placeholder="Opis" required>
+                <input type="text" id="unos-iznosa" placeholder="Iznos" required>
+                <input class="btn" type="submit" value="IZRACUNAJ"/><i class="far fa-check-circle fa-3x icon"></i>
+                <p id="poruka-greske"></p>
+            </section>
+
+            <section>
+                <div class="box">    
+                    <div id="div-prihod">
+                        <h1>PRIHOD</h1>
+                    </div>
+                    <div id="div-rashod" style="color: red;">
+                        <h1>RASHOD</h1>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <script src="./src/validForm.js"></script>
+</body> 
+</html> 
