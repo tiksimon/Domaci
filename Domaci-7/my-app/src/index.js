@@ -16,3 +16,5 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 )
+
+// Napraviti komponentu Card koja preko propsa dobija string i URL iz App-a. komponenta Card ima podkomponente Emoji i Description. String se ispisuje unutar komponente Description a URL se koristi za kreiranje slike unutar komponente Emoji.
